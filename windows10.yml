@@ -6,11 +6,12 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "10"
+      VERSION: "11"
       USERNAME: ${WINDOWS_USERNAME}
       PASSWORD: ${WINDOWS_PASSWORD}
-      RAM_SIZE: "10G"
+      RAM_SIZE: "40G"
       CPU_CORES: "4"
+      DISK_SIZE: "450G"
     cap_add:
       - NET_ADMIN
     ports:
